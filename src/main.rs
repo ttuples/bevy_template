@@ -15,6 +15,7 @@ fn main() {
                 }),
                 ..default()
             }),
+            assets::plugin,
         ))
         .run();
 }
