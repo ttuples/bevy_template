@@ -2,20 +2,8 @@
 
 use bevy::prelude::*;
 
-mod assets;
-mod game;
-
 fn main() {
     App::new()
-        .add_plugins((
-            DefaultPlugins.set(WindowPlugin {
-                primary_window: Some(Window {
-                    title: "bevy game".to_string(),
-                    ..default()
-                }),
-                ..default()
-            }),
-            assets::plugin,
-        ))
+        .add_plugins(bevy_template::AppPlugin)
         .run();
 }

@@ -1,6 +1,6 @@
 [package]
-name = "bevy_template"
-version = "0.1.0"
+name = "{{project-name}}"
+authors = ["{{authors}}"]
 edition = "2021"
 
 [dependencies]

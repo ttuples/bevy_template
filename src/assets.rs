@@ -3,7 +3,6 @@ use bevy::prelude::*;
 use bevy_asset_loader::prelude::*;
 
 pub(crate) fn plugin(app: &mut App) {
-    app.add_plugins(bevy_embedded_assets::EmbeddedAssetPlugin::default());
     app.init_state::<AssetState>();
     app.add_loading_state(
         LoadingState::new(AssetState::Loading)
